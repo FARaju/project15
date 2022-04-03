@@ -32,6 +32,9 @@
     <!-- owl stylesheel -->
     <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+
+    <!-- swipper stylesheet -->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -47,7 +50,7 @@
                         <i class="fa fa-search"></i>
                     </form>
                     </div>
-                    <div class="col-md-4 text-center">
+                    <div class="col-md-4 text-center logo">
                         <a href="index.html" class="logo">MAGDESIGN</a>
                     </div>
                     <div class="col-md-2 text-end">
@@ -59,7 +62,7 @@
                         </div>
                     </div>
                     <div class="col-md-2 text-end">
-                        <a href="" class="h-menu">
+                        <a class="h-menu" id="hamburger-menu" onclick="openMenu()">
                             <span></span>
                         </a>
                     </div>
@@ -68,6 +71,28 @@
         </div>
     </header>
     <!-- header section end here -->
+
+    <!-- right side bar menu section start -->
+    <div id="sidemenu">
+        <!-- ceosbar -->
+        <a  onclick="openMenu()" class="d-block  text-end mb-5">
+            <img src="image/cros.png" width="30px">
+        </a>
+       
+        <div class="menubar">
+            <ul>
+                <li>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Categories</a></li>
+                    <li><a href="">Travel</a></li>
+                    <li><a href="">Food</a></li>
+                    <li><a href="">Technology</a></li>
+                    <li><a href="">Business</a></li>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- right side bar menu section end -->
 
     <!-- main body section code start -->
 
@@ -414,186 +439,171 @@
     </section>
     <!-- all post section end from here -->
 
+    
+
     <!-- slider section code start -->
+    <section id="post-slider">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="image/slider1.png" class="mb-4 rounded" width="653px"height="423px">
+                     <!-- meta tags -->
+                     <div class="meta-tags mb-3">
+                        <div class="cat-name d-inline-block">
+                            <a href="post.html">Business , </a>
+                            <a href="post.html">Travel</a>
+                        </div>
+                        <span> . </span>
+                        <span class="date">July 2, 2020</span>
+                    </div>
+                    <!-- post title -->
+                    <h3><a href="post.html"class="p-title">Your most unhappy customers are your greatest source 
+                        of learning.</a></h3>
+                        <!-- post desc -->
+                        <p class="pp-desc">Far far away, behind the word mountains, 
+                            far from the countries Vokalia and Consonantia,
+                            .</p>
+                            <!-- author details -->
+                            <div class="author d-flex align-items-center">
+                                <img src="image/logo1.png" width="60" class="rounded-circle inline block">
+                                <div class="d-inline-block ms-4">
+                                    <h6>Sergy Campbell</h6>
+                                    <p>CEO and Founder</p>
+                                </div>
+                            </div>
+                        </div>
 
-    <section id="slider">
-        <div class="container">
-            <div class="row">
-                <div class="owl-carousel owl-theme" id="second">
-                    <div class="item">
-                        <div class="p-item">
-                        <img src="image/about1.png" class="img-fluid thumbnail mb-3">
-                        <!-- meta tags -->
-                        <div class="meta-tags mb-3">
-                            <div class="cat-name d-inline-block">
-                                <a href="post.html" class="b-item">Business , </a>
-                                <a href="post.html" class="b-item">Travel</a>
-                            </div>
-                            <span> . </span>
-                            <span class="date">July 2, 2020</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="image/slider2.png" class="mb-4 rounded"  width="653px"height="423px">
+                     <!-- meta tags -->
+                     <div class="meta-tags mb-3">
+                        <div class="cat-name d-inline-block">
+                            <a href="post.html">Business , </a>
+                            <a href="post.html">Travel</a>
                         </div>
-                        <h3><a href="post.html">Your most unhappy customers are your greatest 
-                            source of learning.</a></h3>
-                             <!-- post desc -->
-                             <p class="pp-desc">Far far away, behind the word mountains, 
-                                 far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                <!-- author details -->
-                                <div class="author d-flex align-items-center">
-                                    <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                    <div class="d-inline-block ms-4">
-                                        <h6>Sergy Campbell</h6>
-                                        <p>CEO and Founder</p>
-                                    </div>
+                        <span> . </span>
+                        <span class="date">July 2, 2020</span>
+                    </div>
+                    <!-- post title -->
+                    <h3><a href="post.html"class="p-title">Your most unhappy customers are your greatest source 
+                        of learning.</a></h3>
+                        <!-- post desc -->
+                        <p class="pp-desc">Far far away, behind the word mountains, 
+                            far from the countries Vokalia and Consonantia,
+                            .</p>
+                            <!-- author details -->
+                            <div class="author d-flex align-items-center">
+                                <img src="image/logo1.png" width="60" class="rounded-circle inline block">
+                                <div class="d-inline-block ms-4">
+                                    <h6>Sergy Campbell</h6>
+                                    <p>CEO and Founder</p>
                                 </div>
+                            </div>
+                        </div>
 
-                    </div>
-                    </div>
-                    <div class="item"> 
-                        <div class="p-item">
-                        <img src="image/about2.png" class="img-fluid thumbnail mb-3">
-                        <!-- meta tags -->
-                        <div class="meta-tags mb-3">
-                            <div class="cat-name d-inline-block">
-                                <a href="post.html" class="b-item">Business , </a>
-                                <a href="post.html" class="b-item">Travel</a>
-                            </div>
-                            <span> . </span>
-                            <span class="date">July 2, 2020</span>
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="image/slider3.png" class="mb-4 rounded"  width="653px"height="423px">
+                     <!-- meta tags -->
+                     <div class="meta-tags mb-3">
+                        <div class="cat-name d-inline-block">
+                            <a href="post.html">Business , </a>
+                            <a href="post.html">Travel</a>
                         </div>
-                        <h3><a href="post.html">Your most unhappy customers are your greatest 
-                            source of learning.</a></h3>
-                             <!-- post desc -->
-                             <p class="pp-desc">Far far away, behind the word mountains, 
-                                 far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                <!-- author details -->
-                                <div class="author d-flex align-items-center">
-                                    <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                    <div class="d-inline-block ms-4">
-                                        <h6>Sergy Campbell</h6>
-                                        <p>CEO and Founder</p>
-                                    </div>
+                        <span> . </span>
+                        <span class="date">July 2, 2020</span>
+                    </div>
+                    <!-- post title -->
+                    <h3><a href="post.html"class="p-title">Your most unhappy customers are your greatest source 
+                        of learning.</a></h3>
+                        <!-- post desc -->
+                        <p class="pp-desc">Far far away, behind the word mountains, 
+                            far from the countries Vokalia and Consonantia,
+                            .</p>
+                            <!-- author details -->
+                            <div class="author d-flex align-items-center">
+                                <img src="image/logo1.png" width="60" class="rounded-circle inline block">
+                                <div class="d-inline-block ms-4">
+                                    <h6>Sergy Campbell</h6>
+                                    <p>CEO and Founder</p>
                                 </div>
+                            </div>
+                        </div>
 
-                    </div>
-                    </div>
-                    <div class="item">
-                        <div class="p-item">
-                            <img src="image/about3.png" class="img-fluid thumbnail mb-3">
-                            <!-- meta tags -->
-                            <div class="meta-tags mb-3">
-                                <div class="cat-name d-inline-block">
-                                    <a href="post.html" class="b-item">Business , </a>
-                                    <a href="post.html" class="b-item">Travel</a>
-                                </div>
-                                <span> . </span>
-                                <span class="date">July 2, 2020</span>
-                            </div>
-                            <h3><a href="post.html">Your most unhappy customers are your greatest 
-                                source of learning.</a></h3>
-                                 <!-- post desc -->
-                                 <p class="pp-desc">Far far away, behind the word mountains, 
-                                     far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                    <!-- author details -->
-                                    <div class="author d-flex align-items-center">
-                                        <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                        <div class="d-inline-block ms-4">
-                                            <h6>Sergy Campbell</h6>
-                                            <p>CEO and Founder</p>
-                                        </div>
-                                    </div>
-    
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="image/slider4.png" class="mb-4 rounded"  width="653px"height="423px">
+                     <!-- meta tags -->
+                     <div class="meta-tags mb-3">
+                        <div class="cat-name d-inline-block">
+                            <a href="post.html">Business , </a>
+                            <a href="post.html">Travel</a>
                         </div>
+                        <span> . </span>
+                        <span class="date">July 2, 2020</span>
                     </div>
-                    <div class="item">
-                        <div class="p-item">
-                            <img src="image/about4.png" class="img-fluid thumbnail mb-3">
-                            <!-- meta tags -->
-                            <div class="meta-tags mb-3">
-                                <div class="cat-name d-inline-block">
-                                    <a href="post.html" class="b-item">Business , </a>
-                                    <a href="post.html" class="b-item">Travel</a>
+                    <!-- post title -->
+                    <h3><a href="post.html"class="p-title">Your most unhappy customers are your greatest source 
+                        of learning.</a></h3>
+                        <!-- post desc -->
+                        <p class="pp-desc">Far far away, behind the word mountains, 
+                            far from the countries Vokalia and Consonantia,
+                            .</p>
+                            <!-- author details -->
+                            <div class="author d-flex align-items-center">
+                                <img src="image/logo1.png" width="60" class="rounded-circle inline block">
+                                <div class="d-inline-block ms-4">
+                                    <h6>Sergy Campbell</h6>
+                                    <p>CEO and Founder</p>
                                 </div>
-                                <span> . </span>
-                                <span class="date">July 2, 2020</span>
                             </div>
-                            <h3><a href="post.html">Your most unhappy customers are your greatest 
-                                source of learning.</a></h3>
-                                 <!-- post desc -->
-                                 <p class="pp-desc">Far far away, behind the word mountains, 
-                                     far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                    <!-- author details -->
-                                    <div class="author d-flex align-items-center">
-                                        <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                        <div class="d-inline-block ms-4">
-                                            <h6>Sergy Campbell</h6>
-                                            <p>CEO and Founder</p>
-                                        </div>
-                                    </div>
-    
                         </div>
+
+              </div>
+              <div class="swiper-slide">
+                <div class="slider-item">
+                    <img src="image/slider5.png" class="mb-4 rounded"  width="653px"height="423px">
+                     <!-- meta tags -->
+                     <div class="meta-tags mb-3">
+                        <div class="cat-name d-inline-block">
+                            <a href="post.html">Business , </a>
+                            <a href="post.html">Travel</a>
+                        </div>
+                        <span> . </span>
+                        <span class="date">July 2, 2020</span>
                     </div>
-                    <div class="item">
-                        <div class="p-item">
-                            <img src="image/about5.png" class="img-fluid thumbnail mb-3">
-                            <!-- meta tags -->
-                            <div class="meta-tags mb-3">
-                                <div class="cat-name d-inline-block">
-                                    <a href="post.html" class="b-item">Business , </a>
-                                    <a href="post.html" class="b-item">Travel</a>
+                    <!-- post title -->
+                    <h3><a href="post.html"class="p-title">Your most unhappy customers are your greatest source 
+                        of learning.</a></h3>
+                        <!-- post desc -->
+                        <p class="pp-desc">Far far away, behind the word mountains, 
+                            far from the countries Vokalia and Consonantia,
+                            .</p>
+                            <!-- author details -->
+                            <div class="author d-flex align-items-center">
+                                <img src="image/logo1.png" width="60" class="rounded-circle inline block">
+                                <div class="d-inline-block ms-4">
+                                    <h6>Sergy Campbell</h6>
+                                    <p>CEO and Founder</p>
                                 </div>
-                                <span> . </span>
-                                <span class="date">July 2, 2020</span>
                             </div>
-                            <h3><a href="post.html">Your most unhappy customers are your greatest 
-                                source of learning.</a></h3>
-                                 <!-- post desc -->
-                                 <p class="pp-desc">Far far away, behind the word mountains, 
-                                     far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                    <!-- author details -->
-                                    <div class="author d-flex align-items-center">
-                                        <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                        <div class="d-inline-block ms-4">
-                                            <h6>Sergy Campbell</h6>
-                                            <p>CEO and Founder</p>
-                                        </div>
-                                    </div>
-    
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="p-item">
-                            <img src="image/about2.png" class="img-fluid thumbnail mb-3">
-                            <!-- meta tags -->
-                            <div class="meta-tags mb-3">
-                                <div class="cat-name d-inline-block">
-                                    <a href="post.html" class="b-item">Business , </a>
-                                    <a href="post.html" class="b-item">Travel</a>
-                                </div>
-                                <span> . </span>
-                                <span class="date">July 2, 2020</span>
-                            </div>
-                            <h3><a href="post.html">Your most unhappy customers are your greatest 
-                                source of learning.</a></h3>
-                                 <!-- post desc -->
-                                 <p class="pp-desc">Far far away, behind the word mountains, 
-                                     far from the countries Vokalia and Consonantia, <br>there live the blind texts.</p>
-                                    <!-- author details -->
-                                    <div class="author d-flex align-items-center">
-                                        <img src="image/logo1.png" width="60" class="rounded-circle inline block">
-                                        <div class="d-inline-block ms-4">
-                                            <h6>Sergy Campbell</h6>
-                                            <p>CEO and Founder</p>
-                                        </div>
-                                    </div>
-    
-                        </div>
-                    </div>
-                    
-                </div>
+
+              </div>
+             
             </div>
-        </div>
-
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+       
     </section>
+
+   
     <!-- slider section code end -->
 
     <!-- post section code start -->
@@ -812,7 +822,9 @@
 
       <!-- owl js file -->
       <script src="js/jquery.min.js"></script>
+      
       <script src="js/owl.carousel.js"></script>
+      
 
 
       <script>
@@ -852,5 +864,24 @@
   }
 });
 </script>
+
+<script>
+    var sidebar = document.getElementById('sidemenu');
+    var menuIcon = document.getElementById('hamburger-menu');
+    
+
+    function openMenu(){
+       
+        sidebar.classList.toggle('extra');
+
+    }
+    
+    
+</script>
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      
+      <script src="js/main.js"></script>
+      
+
 </body>
 </html>
